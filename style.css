@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+    /* background-color: #f0ffff; */
+    background-color: white;
+    font-family: lazy dog;
+}
+
+.PlayGameButton {
+    font-family: lazy dog;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    padding: 12px 70px;
+    border: 3px black solid;
+    transition: .2s ease-out all;
+    cursor: pointer;
+}
+
+.PlayGameButton:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+    letter-spacing: .5rem;
+}
+
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.PongTable {
+    border: 4px solid black;
+    height: 350px;
+    background-color: white;
+    margin: 80px;
+    animation: pongTableFadeIn 1s;
+    transition: .2s ease-in-out all;
+}
+
+.PongTable:hover {
+    background-color: #fce9ff;
+}
+
+@keyframes pongTableFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1
+    }
+}
+/*Paddle-1Div*/
+.Paddle {
+    width: 15px;
+    height: 90px;
+    margin: 10px;
+    position: absolute;
+}
+       #paddle-1 {
+        background-color: red;
+        left : 100px;
+
+}
+/*Paddle-2Div*/
+.Paddle {
+    width: 15px;
+    height: 90px;
+    margin: 10px;
+    position: absolute;
+}
+       #paddle-2 {
+        background-color: blue;
+        right : 100px;
+
+}
+
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.hidden {
+    display: none;
+}
