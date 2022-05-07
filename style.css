@@ -25,7 +25,7 @@ body {
 }
 
 
-
+/*In order to use display flex, I created a center class*/
 .center {
     display: flex;
     flex-direction: column;
@@ -40,12 +40,16 @@ body {
     margin: 80px;
     animation: pongTableFadeIn 1s;
     transition: .2s ease-in-out all;
+    position: relative;
+
 }
+
+
 
 .PongTable:hover {
     background-color: #fce9ff;
 }
-
+/* fade in animation */
 @keyframes pongTableFadeIn {
     0% {
         opacity: 0;
@@ -56,30 +60,26 @@ body {
 }
 /*Paddle-1Div*/
 .Paddle {
+    top: 2%;
+
     width: 15px;
     height: 90px;
     margin: 10px;
     position: absolute;
 }
-       #paddle-1 {
-        background-color: red;
-        left : 100px;
 
+#paddle-1 {
+    background-color: red;
+    left : 3%;
 }
+
 /*Paddle-2Div*/
-.Paddle {
-    width: 15px;
-    height: 90px;
-    margin: 10px;
-    position: absolute;
-}
-       #paddle-2 {
-        background-color: blue;
-        right : 100px;
+
+ #paddle-2 {
+    background-color: blue;
+    right : 3%;
 
 }
-
-
 
 h1 {
     text-align: center;
@@ -89,4 +89,32 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+.ball {
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position:absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    top: 48%;
+    /* --x: 50; */
+    /* --y: 50; */
+    /* left: calc(var(--position) * 2vh);
+    top: calc(var(--y) * 1vh);
+    transform: translateY(-50%);
+    /* height: 2.5vh; */
+}
+
+.score{
+position: top;
+border: 3px solid black;
+border-color: green;
+display: flex;
+justify-content: center;
+font-weight: bold;
+font-size: 7vh;
+color: blue
 }
